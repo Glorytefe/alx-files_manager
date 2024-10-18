@@ -3,7 +3,7 @@ import { ObjectId } from 'mongodb';
 import { promises as fsPromises } from 'fs';
 import fileUtils from './utils/file';
 import userUtils from './utils/user';
-import Utils from "./utils";
+import Utils from './utils';
 
 /**
  * By using the module Bull, create a queue fileQueue
@@ -12,8 +12,8 @@ import Utils from "./utils";
  * If userId is not present in the job, raise an error Missing userId
  * If no document is found in DB based on the fileId and userId,
  *  raise an error File not found
- * By using the module image-thumbnail, 
- * generate 3 thumbnails with width = 500, 250 and 100 
+ * By using the module image-thumbnail,
+ * generate 3 thumbnails with width = 500, 250 and 100
  * store each result on the same location of the original file
  * by appending _<width size>
  */

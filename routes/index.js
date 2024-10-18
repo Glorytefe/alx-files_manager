@@ -8,7 +8,7 @@ function controllerRouting(app) {
   const router = express.Router();
   app.use('/', router);
 
-/**
+  /**
  * App Controller
  */
 
@@ -22,7 +22,7 @@ function controllerRouting(app) {
     AppController.getStats(req, res);
   });
 
-/**
+  /**
  * User Controller
  */
 
@@ -36,7 +36,7 @@ function controllerRouting(app) {
     UsersController.getMe(req, res);
   });
 
-/**
+  /**
  * Auth Controller
  */
 
@@ -50,7 +50,7 @@ function controllerRouting(app) {
     AuthController.getDisconnect(req, res);
   });
 
-/**
+  /**
  * File Controller
  */
 
@@ -64,7 +64,7 @@ function controllerRouting(app) {
     FilesController.getShow(req, res);
   });
 
-/**
+  /**
  * should retrieve all users file documents for a
  * specific parentId and with pagination
  */

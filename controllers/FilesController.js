@@ -61,7 +61,7 @@ class FilesController {
     if (!userId && request.body.type === 'image') {
       await fileQueue.add({});
     }
-    
+
     const user = await userUtils.getUser({
       _id: ObjectId(userId),
     });
